@@ -1,29 +1,33 @@
 body{
-    background-color: #F8FAFC;
-    font-family: sans-serif ;
+    background-color: #E3E7EA;
+    font-family: "Roboto", sans-serif;
 }
 
 #sidebar{
+    background-color: #E2E6E9;
     height: 100%;
     width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    border-right: 2px solid #9AA6B2;
+    border-right: 2px solid #b8bbd4;
     display: flex;
     flex-direction: column;
 }
 
 #sidebar a{
     text-decoration: none;
-    color: black;
-    background-color: #D9EAFD;
-    border-radius: 5px;
+    color: rgb(42, 39, 39);
+    border-radius: 8px;
     padding: 0.5rem;
     margin: 10px;
 }
 
 #sidebar h3{
-    margin: 10px;
+    margin: 20px;
+}
+
+#sidebar a:hover{
+    background-color: #d2d7e9;
 }
