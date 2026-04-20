@@ -4,6 +4,7 @@
     --container-background-clr: #EBEBEB;
     --sidebar-hover-clr: #d2d7e9;
     --text-clr: rgb(42, 39, 39);
+    --active-clr: #4c31ac;
 }
 
 * {
@@ -11,9 +12,6 @@
     padding: 0;
     margin: 0;
     color: var(--text-clr);
-    svg{
-        fill: var(--text-clr);
-    }
 }
 
 body{
@@ -64,6 +62,23 @@ a{
     background-color: var(--sidebar-hover-clr);
 }
 
+#sidebar a{
+    flex-grow: 1;
+}
+
+#sidebar svg {
+    flex-shrink: 0;
+    fill: var(--text-clr);
+}
+
+#sidebar .active a{
+    color: var(--active-clr);
+}
+
+#sidebar .active svg{
+    fill: var(--active-clr);
+}
+
 .container {
     border-radius: 20px;
     border: 2px solid var(--border-clr);
@@ -71,3 +86,4 @@ a{
     margin: 2rem;
     padding: 2rem;
 }
+
