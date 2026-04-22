@@ -90,6 +90,7 @@ main{
     border: 2px solid var(--border-clr);
     background-color: var(--container-background-clr);
     padding: 2rem;
+    flex: 1;
 }
 
 .info  {
