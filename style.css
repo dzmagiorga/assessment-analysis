@@ -2,10 +2,18 @@
     --global-background-clr: #E2E4E5;
     --border-clr: #b8bbd4;
     --container-background-clr: #EBEBEB;
-    --sidebar-hover-clr: #d2d7e9;
+    --hover-clr: #d2d7e9;
     --text-clr: rgb(42, 39, 39);
     --active-clr: #4c31ac;
     --grey-text-clr: rgb(95, 95, 106);
+    --purple-svg-background: #D7D9E9;
+    --purple-svg: #565396;
+    --green-svg-background: #c8dcd4;
+    --green-svg: #448262;
+    --yellow-svg-background: #e9e2b4;
+    --yellow-svg: #8f6f3b;
+    --blue-svg-background: #c3dee3;
+    --blue-svg: #509091;
 }
 
 * {
@@ -60,14 +68,14 @@ a{
 }
 
 #sidebar li:hover{
-    background-color: var(--sidebar-hover-clr);
+    background-color: var(--hover-clr);
 }
 
 #sidebar a{
     flex-grow: 1;
 }
 
-#sidebar svg {
+svg {
     flex-shrink: 0;
     fill: var(--text-clr);
 }
@@ -111,3 +119,50 @@ main{
     gap: 2rem;
 }
 
+.quarter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    p{
+        color: var(--grey-text-clr);
+    }
+}
+
+.quarter div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+#quarter-svg-1{
+    background-color: var(--purple-svg-background);
+    path{
+        fill: var(--purple-svg);
+    }
+}
+
+#quarter-svg-2{
+    background-color: var(--green-svg-background);
+    path{
+        fill: var(--green-svg);
+    }
+}
+
+#quarter-svg-3 {
+    background-color: var(--yellow-svg-background);
+    path{
+        fill: none;
+        stroke: var(--yellow-svg);
+    }
+}
+
+#quarter-svg-4{
+    background-color: var(--blue-svg-background);
+    path{
+        fill: var(--blue-svg);
+    }
+}
