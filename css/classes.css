@@ -1,0 +1,57 @@
+.classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: calc(1/3 * 100% - 4/3 * 1rem); /* needed to fit exactly 2 divs in a row */
+    height: 11rem;
+}
+
+.classes > p:nth-child(2){
+    flex: 1 1 auto;
+}
+
+#classes-main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.classes-info {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+    gap: 0.7rem;
+    color: var(--grey-text-clr);
+    svg{
+        fill: var(--grey-text-clr);
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.classes-info > div {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.classes-code{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.classes-code div{
+    padding: 0.2rem 0.4rem;
+    border: 2px solid var(--border-clr);
+    border-radius: 1rem;
+}
+
+.classes-code svg{
+    fill: var(--grey-text-clr);
+    height: 1.1rem;
+    width: 1.1rem;
+}

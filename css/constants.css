@@ -1,0 +1,18 @@
+:root {
+    --global-background-clr: #E2E4E5;
+    --border-clr: #b8bbd4;
+    --container-background-clr: #EBEBEB;
+    --hover-clr: #d2d7e9;
+    --text-clr: rgb(42, 39, 39);
+    --active-clr: #4c31ac;
+    --grey-text-clr: rgba(0, 0, 0, 0.5);
+    --purple-svg-background: #D7D9E9;
+    --purple-svg: #565396;
+    --green-svg-background: #c8dcd4;
+    --green-svg: #448262;
+    --yellow-svg-background: #e9e2b4;
+    --yellow-svg: #8f6f3b;
+    --blue-svg-background: #c3dee3;
+    --blue-svg: #509091;
+    --button-purple-clr: #3F4BB1;
+}
