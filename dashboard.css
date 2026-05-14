@@ -1,0 +1,79 @@
+.quarter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    p{
+        color: var(--grey-text-clr);
+    }
+}
+
+.quarter div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+#quarter-svg-1{
+    background-color: var(--purple-svg-background);
+    path{
+        fill: var(--purple-svg);
+    }
+}
+
+#quarter-svg-2{
+    background-color: var(--green-svg-background);
+    path{
+        fill: var(--green-svg);
+    }
+}
+
+#quarter-svg-3 {
+    background-color: var(--yellow-svg-background);
+    path{
+        fill: none;
+        stroke: var(--yellow-svg);
+    }
+}
+
+#quarter-svg-4{
+    background-color: var(--blue-svg-background);
+    path{
+        fill: var(--blue-svg);
+    }
+}
+
+#dashboard-main > div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-main #recent-quizzes{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    svg{
+        fill: var(--grey-text-clr);
+    }
+}
+
+#actions > div{
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    gap: 0.5rem;
+    p{
+        flex: 1 1 auto;
+    }
+}
+
+#actions > div:hover{
+    background-color: rgb(220, 220, 220);
+}
