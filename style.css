@@ -34,6 +34,10 @@ a{
     text-decoration: none;
 }
 
+.grey{
+    color: var(--grey-text-clr);
+}
+
 #sidebar{
     box-sizing: border-box;
     height: 100vh;
@@ -91,6 +95,7 @@ svg {
 main{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .container {
@@ -165,4 +170,36 @@ main{
     path{
         fill: var(--blue-svg);
     }
+}
+
+#dashboard-main > div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-main #recent-quizzes{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    svg{
+        fill: var(--grey-text-clr);
+    }
+}
+
+#actions > div{
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    gap: 0.5rem;
+    p{
+        flex: 1 1 auto;
+    }
+}
+
+#actions > div:hover{
+    background-color: rgb(220, 220, 220);
 }
