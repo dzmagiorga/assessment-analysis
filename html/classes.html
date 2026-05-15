@@ -40,10 +40,24 @@
                 <h1>Classes</h1>
                 <p>Manage your classes and enroled students</p>
             </div>
-            <button>
+            <button id="open-popup">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
                 <p>Create Class</p>
             </button>
+        </div>
+        <div class="popup-container">
+            <div class="popup">
+                <h3>Create New Class</h3>
+                <p class="grey small">A unique class code will be generated automatically</p>
+                <h4>Class name</h4>
+                <input type="text" id="class-name" placeholder="e.g., Introduction to Computer Science">
+                <h4>Description</h4>
+                <textarea type="text" id="description" placeholder="Brief sescription of the class"></textarea>
+                <div class="cancel-or-proceed">
+                    <button class="cancel">Cancel</button>
+                    <button class="proceed">Create Class</button>
+                </div>
+            </div>
         </div>
         <div id="classes-main">
             <div class="container classes">
