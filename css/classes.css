@@ -8,15 +8,15 @@
     height: 11rem;
 }
 
-.classes > p:nth-child(2){
-    flex: 1 1 auto;
-}
-
 #classes-main {
     display: flex;
     flex-wrap: wrap;
     margin: 2rem;
     gap: 2rem;
+}
+
+.classes > p:nth-child(2){
+    flex: 1 1 auto;
 }
 
 .classes-info {
@@ -52,8 +52,8 @@
 
 .classes-code svg{
     fill: var(--grey-text-clr);
-    height: 1.1rem;
-    width: 1.1rem;
+    height: 0.9rem;
+    width: 0.9rem;
 }
 
 h4{
@@ -64,4 +64,9 @@ h4{
 #description{
 
     height: 4rem;
+}
+
+.copy-button {
+    border-radius: 1rem;
+    padding: 0.2rem 0.15rem 0.05rem 0.25rem;
 }

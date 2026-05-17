@@ -1,19 +1,21 @@
 const classesOpenPopup = document.getElementById("classes-open-popup");
 const classesPopupContainer = document.getElementById("classes-popup-container");
-const classesCancel = document.getElementById("classes-cancel");
+const classesCancelButton = document.getElementById("classes-cancel-button");
+const classesMain = document.getElementById('classes-main');
 
 classesOpenPopup.addEventListener('click', () => {
     classesPopupContainer.classList.add('show');
 })
 
-classesCancel.addEventListener('click', () => {
+classesCancelButton.addEventListener('click', () => {
     classesPopupContainer.classList.remove('show')
 })
 
-
-
 function createClass(name = 'Unnamed Class', description = name){
 
+    name = name === '' ? 'Unnamed Class' : name;
+    description = description === '' ? name : description;
+    
     let testElement = document.createElement('div');
 
     testElement.classList.add('container');
@@ -43,12 +45,13 @@ function createClass(name = 'Unnamed Class', description = name){
     return testElement;
 }
 
-const classesMain = document.getElementById('classes-main');
+classesPopupContainer.addEventListener('click', (event) =>{
+    if(event.target.id === 'classes-proceed-button'){
+        const className = document.getElementById('class-name').value;
+        const classDescription = document.getElementById('class-description').value;
+        classesMain.appendChild(createClass(className, classDescription));
 
-const test1 = createClass('giorga', 'magaria');
+        classesPopupContainer.classList.remove('show')
+    }
+})
 
-const test2 = createClass();
-
-classesMain.appendChild(test1);
-
-classesMain.appendChild(test2);
