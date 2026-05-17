@@ -12,12 +12,16 @@ classesCancelButton.addEventListener('click', () => {
     classesPopupContainer.classList.remove('show')
 })
 
+function generateClassID(){
+    return ((Math.floor(Math.random() * MAX_ID))
+                    .toString(16)).padStart(8, '0');
+}
+
 function createClass(name = 'Unnamed Class', description = name){
 
     name = name === '' ? 'Unnamed Class' : name;
     description = description === '' ? name : description;
-    const classID = ((Math.floor(Math.random() * MAX_ID))
-                    .toString(16)).padStart(8, '0');
+    const classID = generateClassID();
     
     let testElement = document.createElement('div');
 
